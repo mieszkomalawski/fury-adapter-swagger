@@ -1,3 +1,11 @@
+# Master
+
+## Bug Fixes
+
+- When a request body has a schema of `format: binary` then we no longer
+  generate a JSON Schema in the parse result. A JSON Schema for such type
+  doesn't make sense as you cannot place binary data in JSON.
+
 # 0.19.1
 
 ## Enhancements
